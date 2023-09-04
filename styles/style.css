@@ -288,6 +288,88 @@
   margin-right: .8rem;
 }
 
+
+/* footer section  */
+footer {
+  max-width: 1440px;
+  height: 336px;
+  background-color: #0B0223;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.footer-title img {
+  width: 85px;
+  height: 40px;
+  margin-right: .4rem;
+}
+
+.footer-title p {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-game {
+  color: #FF42A5;
+}
+
+.footer-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-item a {
+  text-decoration: none;
+  margin-right: 1.2rem;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-item a:hover {
+  color: #FF42A5;
+}
+
+.footer-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-icon .fa-brands {
+  color: #fff;
+}
+
+.footer-term {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.footer-term a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.copy {
+  color: #fff;
+}
+
 @media screen and (max-width:425px) {
   .nav-info {
     box-shadow: none;
@@ -355,18 +437,34 @@
   .play-img img {
     width: 200px;
   }
+
   .total-game-content {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 10px;
   }
+
   .total-game p {
     font-size: 10px;
   }
-  
+
   .total-game img {
     width: 20px;
     height: 20px;
     margin-right: .2rem;
+  }
+
+  .footer-item {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .footer-term {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .copy {
+    font-size: 8px;
   }
 }
 
@@ -433,13 +531,28 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 0 10px;
   }
+
   .total-game p {
     font-size: 20px;
   }
-  
+
   .total-game img {
     width: 30px;
     height: 30px;
     margin-right: .5rem;
+  }
+
+  .footer-item {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .footer-term {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .copy {
+    font-size: 8px;
   }
 }
