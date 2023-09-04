@@ -198,7 +198,95 @@
   gap: 10px;
 }
 
+/* play-container  */
+.play-container {
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 50px;
+}
 
+.play-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-info {
+  width: 50%;
+  text-align: end;
+  margin: 0 150px;
+  color: #0B0223;
+}
+
+.play-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.play-title span {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.play-img {
+  width: 50%;
+  position: relative;
+}
+
+.play-font {
+  position: absolute;
+  bottom: -50px;
+  left: -100px;
+}
+
+/* total game ? */
+.total-game-container {
+
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+  padding: 30px 0;
+}
+
+.total-game-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 100px;
+}
+
+.total-game {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.total-game:hover {
+  border: 1px solid red;
+  color: #FF42A5;
+}
+
+.total-game p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.total-game img {
+  width: 40px;
+  height: 40px;
+  margin-right: .8rem;
+}
 
 @media screen and (max-width:425px) {
   .nav-info {
@@ -238,6 +326,48 @@
   .section-description {
     font-size: .8rem;
   }
+
+  .play-container {
+    margin: 50px;
+    padding: 5px;
+  }
+
+  .play-content {
+    flex-direction: column;
+  }
+
+  .play-title {
+    font-size: 1.5rem;
+
+  }
+
+  .play-info {
+    width: 100%;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .play-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .play-img img {
+    width: 200px;
+  }
+  .total-game-content {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+  .total-game p {
+    font-size: 10px;
+  }
+  
+  .total-game img {
+    width: 20px;
+    height: 20px;
+    margin-right: .2rem;
+  }
 }
 
 @media screen and (min-width:426px) and (max-width:768px) {
@@ -273,5 +403,43 @@
 
   .section-description {
     font-size: 1rem;
+  }
+
+  .play-container {
+    margin: 50px;
+    padding: 10px;
+  }
+
+  .play-content {
+    flex-direction: column;
+  }
+
+  .play-title {
+    font-size: 2rem;
+
+  }
+
+  .play-info {
+    width: 100%;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .play-img {
+    width: 80%;
+  }
+
+  .total-game-content {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+  .total-game p {
+    font-size: 20px;
+  }
+  
+  .total-game img {
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
   }
 }
